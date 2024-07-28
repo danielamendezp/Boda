@@ -1,0 +1,178 @@
+.container-fluid {
+    position: relative;  /* Posiciona el contenedor como relativo para permitir la posición absoluta de sus hijos */
+    width: 100%;
+    height: 100vh;       /* Puedes ajustar esta altura según tus necesidades */
+    overflow: hidden;    /* Ocultar cualquier desbordamiento de la imagen */
+}
+
+.container-fluid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* La imagen cubrirá todo el contenedor */
+}
+.detailsSpecial {
+    font-family: "Sacramento", cursive;
+    font-size: 98px;
+    text-shadow: 1px 1px 1px;
+    color: #706447;
+}
+.details img{
+    object-fit: cover; 
+}
+
+.details{
+    width: 15% !important;
+    height: 15% !important;
+}
+
+.detailsText {
+    font-family: 'Allura', cursive;
+    color: rgb(98, 96, 93) ;
+    font-size: 40px;
+    font-style: italic;
+    text-shadow: #050505;
+}
+
+.otros{
+    font-family: 'Allura', cursive;
+    color: rgb(98, 96, 93) ;
+    font-size: 30px; /* Tamaño de la fuente ajustable */
+    font-style: normal; /* Asegura que el estilo sea regular, no cursiva */
+    letter-spacing: 2px; /* Ajusta el espaciado entre letras */
+}
+
+.textos {
+    font-family: 'Allura', cursive;
+    color: rgb(142, 149, 149);
+    font-size: 25px; /* Tamaño de la fuente ajustable */
+    font-style: italic;
+    text-shadow: #050505;
+    letter-spacing: 2px; /* Ajusta el espaciado entre letras */
+}
+
+.romantica {
+    font-family: 'Great Vibes', cursive;
+    color: rgb(190, 162, 125);
+    font-size: 80px; /* Tamaño de la fuente ajustable */
+    font-style: normal; /* Asegura que el estilo sea regular, no cursiva */
+    letter-spacing: 5px; /* Ajusta el espaciado entre informacionletras */
+}
+
+.informacion {
+    width: 100%; /* Ancho del contenedor al 100% del contenedor padre */
+    padding: 20px; /* Espacio interno de 20px alrededor del contenido */
+    text-align: center; /* Alineación del texto y contenido al centro */
+    background-image: url("/assets/Img/fondo.png") !important; /* Ruta a la imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+    background-position: center center; /* Centra la imagen de fondo */ 
+    background-color: #f0f0f0; /* Color de fondo temporal */
+}
+
+
+.btn-custom {
+    background-color: #8ba986 !important; /* Color dorado */
+    color: white !important;
+    border: none;
+    font-family: 'Allura', cursive !important;
+    padding: 20px 30px; 
+    font-size: 24px !important; 
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+.btn-custom:hover {
+    background-color: #84795d !important; /* Color dorado más oscuro para el hover */
+}
+.btn-custom i {
+    font-size: 23px;
+}
+
+.date-box {
+   
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    border-radius: 5px;
+    font-family: 'Allura', cursive;
+}
+.time-box {
+    border: 1px solid rgb(60, 164, 100);
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.time-box .value {
+    font-size: 24px;
+    font-weight: bold;
+}
+.time-box .label {
+    font-size: 16px;
+}
+
+.subtitulos {
+    font-family: 'Lobster', cursive;
+    font-size: 45px;
+    color:rgb(190, 162, 125);
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+.textTitle {
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    color: rgb(190, 162, 125);
+    font-style: normal;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.textoImagen {
+    width: 80%;
+    position: absolute;
+    top: 100px;           /* Ajusta la distancia desde la parte superior del contenedor */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;        /* Color del texto */
+    text-align: center;
+    font-size: 2em;      /* Ajusta el tamaño del texto según tus necesidades */
+    font-family: Arial, sans-serif;  /* Puedes cambiar la fuente según tus necesidades */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);  /* Añade una sombra al texto para mejor legibilidad */
+    margin: 0;           /* Elimina el margen por defecto */
+}
+
+.textoImagen:nth-of-type(2) {
+    top: 150px;           /* Ajusta la distancia del segundo texto desde la parte superior del contenedor */
+}
+
+.inicio {
+    text-align: center;
+    padding: 20px;
+}
+.inicio img {
+    width: 100%;
+    height: auto;
+}
+.textoImagen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.section img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.btn-custom {
+    margin-top: 10px;
+}
