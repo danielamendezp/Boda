@@ -83,7 +83,7 @@
     width: 100%; /* Ancho del contenedor al 100% del contenedor padre */
     padding: 20px; /* Espacio interno de 20px alrededor del contenido */
     text-align: center; /* Alineación del texto y contenido al centro */
-    background-image: url("/assets/Img/11.png") !important; /* Ruta a la imagen de fondo */
+    background-image: url("/assets/Img/16.png") !important; /* Ruta a la imagen de fondo */
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
     background-position: center center; /* Centra la imagen de fondo */ 
     background-color: #f0f0f0; /* Color de fondo temporal */
@@ -93,7 +93,17 @@
     width: 100%; /* Ancho del contenedor al 100% del contenedor padre */
     padding: 20px; /* Espacio interno de 20px alrededor del contenido */
     text-align: center; /* Alineación del texto y contenido al centro */
-    background-image: url("/assets/Img/9.png") !important; /* Ruta a la imagen de fondo */
+    background-image: url("/assets/Img/18.png") !important; /* Ruta a la imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+    background-position: center center; /* Centra la imagen de fondo */ 
+    background-color: #f0f0f0; /* Color de fondo temporal */
+}
+
+.informacion3 {
+    width: 100%; /* Ancho del contenedor al 100% del contenedor padre */
+    padding: 20px; /* Espacio interno de 20px alrededor del contenido */
+    text-align: center; /* Alineación del texto y contenido al centro */
+    background-image: url("/assets/Img/17.png") !important; /* Ruta a la imagen de fondo */
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
     background-position: center center; /* Centra la imagen de fondo */ 
     background-color: #f0f0f0; /* Color de fondo temporal */
