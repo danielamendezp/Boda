@@ -1,7 +1,6 @@
 .container-fluid {
     position: relative;  /* Posiciona el contenedor como relativo para permitir la posición absoluta de sus hijos */
-    width: 100%;
-    height: 100vh;       /* Puedes ajustar esta altura según tus necesidades */
+    width: 100%;     /* Puedes ajustar esta altura según tus necesidades */
     overflow: hidden;    /* Ocultar cualquier desbordamiento de la imagen */
 }
 
@@ -12,23 +11,28 @@
 }
 .detailsSpecial {
     font-family: "Sacramento";
-    font-size: 98px;
-    text-shadow: 1px 1px 1px;
+    font-size: 61px;
     color: #706447;
+    width: 100%;
 }
 .details img{
     object-fit: cover; 
+    width: 20% !important;
+    object-fit: cover; 
+    height: 22% !important;
 }
 
 .details{
-    width: 15% !important;
-    height: 15% !important;
+    width: 20% !important;
+    object-fit: cover; 
+    height: 22% !important;
 }
 
 .detailsText {
     font-family: 'Allura';
     color: rgb(98, 96, 93) ;
     font-size: 40px;
+    width: 100%;
     font-style: italic;
     text-shadow: #050505;
 }
@@ -36,15 +40,33 @@
 .otros{
     font-family: 'Allura';
     color: rgb(98, 96, 93) ;
-    font-size: 30px; /* Tamaño de la fuente ajustable */
+    font-size: 20px; /* Tamaño de la fuente ajustable */
+    font-style: normal; /* Asegura que el estilo sea regular, no cursiva */
+    letter-spacing: 2px; /* Ajusta el espaciado entre letras */
+}
+
+.lineaFalta{
+    font-family: 'Allura';
+    color: rgb(98, 96, 93) ;
+    font-size: 27px; /* Tamaño de la fuente ajustable */
+    font-style: normal; /* Asegura que el estilo sea regular, no cursiva */
+    letter-spacing: 2px; /* Ajusta el espaciado entre letras */
+}
+
+
+.datos{
+    font-family: 'Allura';
+    color: rgb(98, 96, 93) ;
+    font-size: 26px; /* Tamaño de la fuente ajustable */
     font-style: normal; /* Asegura que el estilo sea regular, no cursiva */
     letter-spacing: 2px; /* Ajusta el espaciado entre letras */
 }
 
 .nosEmbarcamos {
     font-family: 'Allura';
+    width: 100%;
     color: rgb(98, 96, 93) ;
-    font-size: 25px; /* Tamaño de la fuente ajustable */
+    font-size: 22px; /* Tamaño de la fuente ajustable */
     text-shadow: #050505;
     letter-spacing: 2px; /* Ajusta el espaciado entre letras */
 }
@@ -52,7 +74,7 @@
 .estasInvitado {
     font-family: 'Great Vibes';
     color: rgb(190, 162, 125);
-    font-size: 80px; /* Tamaño de la fuente ajustable */
+    font-size: 63px; /* Tamaño de la fuente ajustable */
     font-style: normal; /* Asegura que el estilo sea regular, no cursiva */
     letter-spacing: 5px; /* Ajusta el espaciado entre informacionletras */
 }
@@ -125,15 +147,16 @@
 
 .subtitulos {
     font-family: 'Lobster';
-    font-size: 45px;
+    font-size: 34px;
     color:rgb(190, 162, 125);
     font-style: normal;
     letter-spacing: 1px;
+    font-weight: bold;
 }
 
 .soloFalta {
     font-family: 'Great Vibes';
-    font-size: 40px;
+    font-size: 43px;
     color: rgb(190, 162, 125);
     font-style: normal;
     letter-spacing: 1px;
@@ -142,19 +165,27 @@
 }
 
 .textoImagen {
-    width: 80%;
+    width: 100%;
     font-family: "Great Vibes";
-    font-size: 70px !important;
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
-    position: absolute;
-    top: 100px;           /* Ajusta la distancia desde la parte superior del contenedor */
-    left: 50%;
-    transform: translateX(-50%);
-    color: rgb(15, 15, 15) !important;        /* Color del texto */
+    font-size: 90px !important;
+   
+    height: auto;
+    color: rgb(77, 71, 71) !important;        /* Color del texto */
     text-align: center;
-    font-size: 2em;      /* Ajusta el tamaño del texto según tus necesidades */
-    margin: 0;           /* Elimina el margen por defecto */
 }
+
+.linea1 {
+    top: 100px;
+}
+
+.linea2 {
+    top: 180px;
+}
+
+.linea3 {
+    top: 260px;
+}
+
 
 .textoImagen:nth-of-type(2) {
     top: 200px;           /* Ajusta la distancia del segundo texto desde la parte superior del contenedor */
