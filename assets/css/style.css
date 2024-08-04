@@ -1,8 +1,41 @@
 .container-fluid {
     position: relative;  /* Posiciona el contenedor como relativo para permitir la posición absoluta de sus hijos */
-    width: 100%;     /* Puedes ajustar esta altura según tus necesidades */
+    width: 100%;     
     overflow: hidden;    /* Ocultar cualquier desbordamiento de la imagen */
+    text-align: center;  /* Centra el contenido textual */
 }
+
+.imagenPrincipal {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.textoImagen {
+    position: absolute;
+    width: 100%;
+    font-family: "Great Vibes", cursive;
+    font-size: 90px;
+    color: rgb(77, 71, 71);
+    text-align: center;
+    white-space: nowrap; /* Evita el salto de línea en el texto */
+    z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+    margin: 0; /* Asegúrate de que no haya márgenes que puedan afectar el espaciado */
+    padding: 0; /* Asegúrate de que no haya relleno que pueda afectar el espaciado */
+}
+
+.linea1 {
+    top: 20%; /* Ajusta la posición vertical del texto para evitar que quede pegado */
+}
+
+.linea2 {
+    top: 35%; /* Ajusta la posición vertical del texto para evitar que quede pegado */
+}
+
+.linea3 {
+    top: 50%; /* Ajusta la posición vertical del texto para evitar que quede pegado */
+}
+
 
 .container-fluid img {
     width: 100%;
@@ -29,6 +62,7 @@
 .detailsVideo{
     width: 50% !important;
     height: auto !important;
+    display: block;
 }
 
 .detailsVideo video{
@@ -201,33 +235,6 @@
     margin-bottom: 30px;
 }
 
-.textoImagen {
-    width: 100%;
-    font-family: "Great Vibes";
-    font-size: 90px !important;
-   
-    height: auto;
-    color: rgb(77, 71, 71) !important;        /* Color del texto */
-    text-align: center;
-}
-
-.linea1 {
-    top: 100px;
-}
-
-.linea2 {
-    top: 180px;
-}
-
-.linea3 {
-    top: 260px;
-}
-
-
-.textoImagen:nth-of-type(2) {
-    top: 200px;           /* Ajusta la distancia del segundo texto desde la parte superior del contenedor */
-}
-
 .inicio {
     text-align: center;
     padding: 20px;
@@ -252,4 +259,22 @@
 }
 .btn-custom {
     margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .textoImagen {
+        font-size: 60px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+    }
+
+    .linea1 {
+        top: 30%;
+    }
+
+    .linea2 {
+        top: 50%;
+    }
+
+    .linea3 {
+        top: 70%;
+    }
 }
