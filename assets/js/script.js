@@ -23,3 +23,5 @@ var countDownDate = new Date("Apr 12, 2025 15:00:00").getTime();
                 document.querySelector(".date-box").innerHTML = "¡Es el día de nuestra boda!";
             }
         }, 1000);
+
+        
