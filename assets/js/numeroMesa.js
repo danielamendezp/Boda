@@ -3,7 +3,7 @@ document.getElementById('user-input').addEventListener('input', function() {
 
     // Check if userInput length is greater than 4
     if (userInput.length > 4) {
-        fetch('/assets/js/listado.json')
+        fetch('assets/js/listado.json')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
