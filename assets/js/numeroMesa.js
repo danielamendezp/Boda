@@ -18,7 +18,7 @@ document.getElementById('user-input').addEventListener('input', function() {
 
                     if (persona) {
                         const mesa = persona.numero_de_mesa.toString();
-                        document.querySelector('.numeroMesa').innerHTML = `<img class="mesa mt-5" src="../Img/mesa ${mesa}.png" alt="Mesa ${mesa}">`;
+                        document.querySelector('.numeroMesa').innerHTML = `<img class="mesa mt-5" src="../../assets/Img/mesa ${mesa}.png" alt="Mesa ${mesa}">`;
                     } else {
                         console.log('Persona not found');
                     }
