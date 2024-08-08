@@ -1,5 +1,5 @@
 document.getElementById('user-input').addEventListener('input', function() {
-    const userInput = this.value.trim().toLowerCase();
+    const userInput = removeAccents(this.value.trim().toLowerCase());
 
     // Check if userInput length is greater than 4
     if (userInput.length > 4) {
@@ -14,7 +14,7 @@ document.getElementById('user-input').addEventListener('input', function() {
                 try {
                     const data = JSON.parse(text); // Intentar parsear el texto como JSON
                     const mesas = data;
-                    const persona = mesas.find(persona => persona.nombre.trim().toLowerCase() === userInput.toLowerCase());
+                    const persona = mesas.find(persona => (persona.nombre.trim().toLowerCase()) === userInput.toLowerCase());
 
                     if (persona) {
                         const mesa = persona.numero_de_mesa.toString();

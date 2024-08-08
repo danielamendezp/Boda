@@ -59,16 +59,22 @@
     height: auto !important;
 }
 
-.mesa img{
-    object-fit: cover; 
-    width: 100% !important;
-    height: 100% !important;
+/* Contenedor de la imagen */
+.mesa {
+    width: 50%; /* Ajusta según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    overflow: hidden; /* Asegura que no se salgan los bordes del contenedor */
+    position: relative; /* Asegura que la imagen se posicione correctamente dentro del contenedor */
 }
 
-.mesa{
-    width: 50% !important;
-    height: auto !important;
+/* Estilo para la imagen dentro del contenedor */
+.mesa img {
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+    width: 100%; /* Asegura que la imagen tenga el 100% del ancho del contenedor */
+    height: 100%; /* Asegura que la imagen tenga el 100% del alto del contenedor */
+    display: block; /* Elimina el espacio blanco debajo de la imagen */
 }
+
 
 .detailsCorazon img{
     object-fit: cover; 
