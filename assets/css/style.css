@@ -59,6 +59,17 @@
     height: auto !important;
 }
 
+.mesa img{
+    object-fit: cover; 
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.mesa{
+    width: 50% !important;
+    height: auto !important;
+}
+
 .detailsCorazon img{
     object-fit: cover; 
     width: 100% !important;

@@ -1,13 +1,9 @@
 document.getElementById('user-input').addEventListener('input', function() {
     const userInput = this.value.trim().toLowerCase();
-    const numeroMesaDiv = document.querySelector('.numeroMesa');
-
-    // Clear the numeroMesaDiv on every input
-    numeroMesaDiv.innerHTML = '';
 
     // Check if userInput length is greater than 4
     if (userInput.length > 4) {
-        fetch('../listado.json')
+        fetch('/assets/js/listado.json')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -18,12 +14,11 @@ document.getElementById('user-input').addEventListener('input', function() {
                 try {
                     const data = JSON.parse(text); // Intentar parsear el texto como JSON
                     const mesas = data;
-                    const persona = mesas.find(persona => persona.nombre.toLowerCase() === userInput);
+                    const persona = mesas.find(persona => persona.nombre.toLowerCase() === userInput.toLowerCase());
 
                     if (persona) {
-                        const img = document.createElement('img');
-                        img.src = `../Img/imagenes/mesa${persona.numero_de_mesa}.png`; // Ajusta la ruta según corresponda
-                        numeroMesaDiv.appendChild(img);
+                        const mesa = persona.numero_de_mesa.toString();
+                        document.querySelector('.numeroMesa').innerHTML = `<img class="mesa mt-5" src="/assets/Img/mesa ${mesa}.png" alt="Mesa ${mesa}">`;
                     } else {
                         console.log('Persona not found');
                     }
